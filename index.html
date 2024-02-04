@@ -21,8 +21,20 @@
         {
             list-style-type: none;
         }
-      
+        
     </style>
+    <script>
+        /* first collect all the elements with CSS selector <a> or collect all anchor elements and store 
+            them in array.
+            now for Each object, implement given function..function is =>
+            add rel attribute and its value;
+            */
+        const anchorLinks = document.querySelectorAll('a')
+        anchorLinks.forEach(link => 
+        {
+            link.setAttribute('rel', 'noopener noreferrer');
+        });
+    </script>
 </head>
 <body>
     <nav>
