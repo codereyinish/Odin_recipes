@@ -5,22 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        a
-        {
-            text-decoration: none;
-            color: blue;
+        *{
+            margin: 0;
+            padding: 0;
         }
-        a:hover{
-            color: green;
+        body{
+            width: 100vw;
+            height: 105vh;
+            margin: 0 0 1vh;
+            background-color: #f8fafc;
         }
-        dt a:visited
+    
+    nav{
+        height: 15vh;
+        background: linear-gradient(
+            to right,
+            rgb(108, 240, 52) 0%,
+         rgb(255, 255, 255) 50%,
+            rgb(246, 230, 16) 100%
+        );
+        /* padding: 1vh 0; */
+        border: 0.1px solid #fbf7f7;
+        position: -webkit-sticky;
+    }
+       ul
         {
-            color: rgb(252, 114, 16);
+            margin: 1% auto;
+            width: 20%;
+            height: 98%;
+            list-style-type: none;
+            
         }
-        ul
-        {
+        li{
+            width: 50%;
+            height: 24%;
+            margin: 0 auto;
+
+            /* border: 2px solid #000; */
+            /* background-color: #f0e9e9; */
+            color: rgb(226, 179, 35);
+            text-align: center;
             list-style-type: none;
         }
+        a{
+            text-decoration: none;
+        }
+        
+        li>a:hover
+        {
+            color: orange  ;
+        }
+        main{
+            margin: 2% 0% 0% 1%;
+        }
+        h1{
+            font: bold italic  24px "Times New Roman", Serif;
+            color: #fd7404;
+        }
+        .recipe_brief
+        {
+            width: 45vw;
+            border: 2px solid rgb(228, 127, 33);
+        }
+        
+        footer{
+            width: 100vw;
+            height: 5vh;
+            background-color: rgb(83, 171, 239);
+        }
+        .minicontent{
+            color: whitesmoke;
+            background-color: #9fdb72;
+            text-align: justify;
+        }
+
+
         
     </style>
     <script>
@@ -48,13 +107,13 @@
     <main>
         <h1>TastyTaste's Recipe's</h1>
         <p>Here are our some popular recipes</p>
-        <div>
-            <img src="andapic0.jpg" alt="Picture of Anda Curry" width="420" height="280">
-            <source>
+        
+        <div class = "recipe_brief"> 
+            <img src="andapic0.jpg" alt="Picture of Anda Curry" width="360px" height="240px">
             <dl>
                 <dt><a href="AndaCurry/andacurry.html">Anda Curry</a></dt>
                 <dt>
-                    <div>Andaa curry(English Meaning : Egg Curry) is a popular and comforting Indian dish featuring hard-boiled eggs, onions, tomatoes, and a blend of whole and ground spices. The diversity of Indian cuisine is reflected in the various ways egg curry is prepared.........</div>
+                    <div class = "minicontent" >Andaa curry(English Meaning : Egg Curry) is a popular and comforting Indian dish featuring hard-boiled eggs, onions, tomatoes, and a blend of whole and ground spices. The diversity of Indian cuisine is reflected in the various ways egg curry is prepared.........</div>
                     <!-- I want this div to be act like a link, blurs out half portion, when clicked prompt to diff page -->
                 </dt>
             </dl>
@@ -66,3 +125,9 @@
 
 </body>
 </html>
+<!-- Problems:
+    1. position of footer
+   2. vertical box inside the nav,  inside the nav there will be 5 boxes, 4 sqaure for ads, and one vertical
+Respnisveness in all dimensons:
+h1 -- size df h1 shouldnt be absolute, it should be relative to container -->
+<!-- I want this div to include google alike, rounded pic, clickable dewscription, review, with save and download button, able to scroll and search recipes -->
