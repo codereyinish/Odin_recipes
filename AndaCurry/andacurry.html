@@ -6,10 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../main.css">
     <style>
-        a
-        {
-            text-decoration: none;
-        }
+        
        dt a:hover{
             color: green;
         }
@@ -17,14 +14,34 @@
         {
             color: rgb(130, 40, 190);
         }
+ol
+{
+    list-style-position:  inside;
+}
+h2{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+dl{
+    margin-bottom: 0.4em;
+    
+}
+body{
+    counter-reset: dl-counter;
+}
+dl>dt::before{
+    content: counter(dl-counter) " . ";
+    counter-increment: dl-counter;
+}
+
       
     </style>
 </head>
 <body>
-    <nav>
+    <nav id="NAV">
         <ul>
-            <li><a href="">HOME</a></li>
-            <li><a href="">RECIPES</a></li>
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="#">RECIPES</a></li>
             <li><a href="">DOWNLOAD</a></li>
             <li><a href="">SUPPORT US</a></li>
         </ul>
@@ -38,14 +55,14 @@
         </p>
         <h2> Ingredients</h2>
         <div>
-            <ul>
+            <ol>
                <li>Eggs</li>
                <li>Onion</li>
                <li>Tomatoes</li>
                <li>Oil</li>
                <li>Indian Spices</li>
                <li>Indian Herbs</li>
-            </ul>
+            </ol>
         </div>
         <h2>Recipe</h2>
         <dl>
@@ -60,6 +77,7 @@
             <dt>Onion Magic</dt>
             <dd>Sauté finely chopped onions until soft and golden. Sprinkle a generous pinch of salt for enhanced caramelization.</dd>
         </dl>
+        
         <dl>
             <dt> Spice It Up</dt>
             <dd>Lower heat and add ginger-garlic paste, followed by cumin powder, coriander powder, turmeric, red chili powder, and Kashmiri red chili powder. Sauté briefly, adding water to prevent burning</dd>
