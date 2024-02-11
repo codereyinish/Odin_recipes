@@ -4,7 +4,6 @@
 }
 body{
     width: 100vw;
-    height: 105vh;
     margin: 0 0 1vh;
     background-color: #f8fafc;
 }
@@ -19,6 +18,8 @@ background: linear-gradient(
 );
 /* padding: 1vh 0; */
 border: 0.1px solid #fbf7f7;
+position: sticky;
+top: 0%;
 }
 
 #NAV ul
