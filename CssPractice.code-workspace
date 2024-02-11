@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../CssPractice"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Odin_recipes"
+	}
+}
