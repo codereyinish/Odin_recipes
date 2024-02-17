@@ -4,8 +4,10 @@
 }
 body{
     width: 100vw;
-    margin: 0 0 1vh;
+    /* margin: 0 0 1vh; */
     background-color: #f8fafc;
+    min-height: 100vw;
+    position: relative;
 }
 
 #NAV{
@@ -50,7 +52,7 @@ li>a:hover
     color: orange  ;
 }
 main{
-            margin: 2% 0% 3% 1%;
+            margin: 2% 0% 15% 1%;
             font-size: 17px;
             font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
         
@@ -66,4 +68,8 @@ main{
             width: 100vw;
             height: 10vh;
             background-color: rgb(83, 171, 239);
+            position: sticky;
+            bottom: 0%; 
+            /* it becomes relative to viewport, and you can see it is out of flow and other element ignore it,
+            sit below it, its z-index high so other elements in normal flow sit and scroll below */
         }
